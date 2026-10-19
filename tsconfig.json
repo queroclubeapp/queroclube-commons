@@ -1,19 +1,29 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "moduleResolution": "node",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
         "esModuleInterop": true,
-        "outDir": "lib/src",
-        "target": "ES5",
+        "rootDir": "./src",
+        "outDir": "./lib/src",
+        "target": "ES2017",
         "declaration": true,
         "sourceMap": true,
         "noEmitOnError": true,
-        "downlevelIteration": true,
         "emitDecoratorMetadata": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+        "useUnknownInCatchVariables": false
     },
     "include": [
         "src/**/*"
     ],
-    "module": "commonjs"
+    "exclude": [
+        "node_modules",
+        "lib",
+        "**/*.spec.ts"
+    ]
 }
