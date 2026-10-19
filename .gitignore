@@ -1,0 +1,7 @@
+node_modules
+lib
+.DS_Store
+.env
+.env.local
+src/google-drive/test/token.json
+src/google-drive/test/googleDriveCredentials.json
